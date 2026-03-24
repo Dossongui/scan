@@ -10,11 +10,13 @@
 const params = new URLSearchParams(window.location.search);
 const moto = params.get("moto");
 
+// Appel silencieux vers ton Apps Script (CORRECT)
 fetch("https://script.google.com/macros/s/AKfycbz51RBhUJSJFXwaRMhsOD0cmjTep-7QGsxu3U4jev5DSJDXjGoTYhaud1-K4AwRFBOQIg/exec?moto=" + moto)
   .catch(e => console.log("Enregistré"));
 
+// Redirection vers l'application
 window.location.href = "https://app.zemexpress.preprod.cysc.fr/driver/register";
 </script>
 
 </body>
-</html>
+</html
