@@ -11,7 +11,7 @@ const params = new URLSearchParams(window.location.search);
 const moto = params.get("moto");
 
 // Appel silencieux vers ton Apps Script (CORRECT)
-fetch("https://script.google.com/macros/s/AKfycbz51RBhUJSJFXwaRMhsOD0cmjTep-7QGsxu3U4jev5DSJDXjGoTYhaud1-K4AwRFBOQIg/exec?moto=" + moto)
+fetch("https://script.google.com/macros/s/AKfycbyJLT5EjgBLDK2MGTtjhe9CTd8eyro1H4d_F_98N712RWN9rMjgpH7mBi5YZmWqVRR5iQ/exec?moto=" + moto)
   .catch(e => console.log("Enregistré"));
 
 // Redirection vers l'application
